@@ -147,7 +147,7 @@ def commandCursor(sheet, execstr):
         rowname = keystr(k) if k else sheet.cursorRowIndex
 
     if contains(execstr, 'cursorTypedValue', 'cursorDisplay', 'cursorValue', 'cursorCell', 'cursorCol', 'cursorVisibleCol'):
-        colname = sheet.cursorCol.name or sheet.visibleCols.index(sheet.cursorCol)
+        colname = str(sheet.cursorCol.name) or int(sheet.visibleCols.index(sheet.cursorCol))
     return colname, rowname
 
 
@@ -190,7 +190,7 @@ class _CommandLog:
 
         comment = vd.currentReplayRow.comment if vd.currentReplayRow else cmd.helpstr
         vd.activeCommand = self.newRow(sheet=sheetname,
-                                            col=str(colname),
+                                            col=colname,
                                             row=str(rowname),
                                             keystrokes=keystrokes,
                                             input=args,
