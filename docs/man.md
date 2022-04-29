@@ -72,7 +72,7 @@ vd(1)                                                                           
      <span style="font-weight:bold;">z&lt;</span>  <span style="font-weight:bold;">z&gt;</span>           go up/down current column to next null value
       <span style="font-weight:bold;">{</span>   <span style="font-weight:bold;">}</span>           go up/down current column to next selected row
 
-      <span style="font-weight:bold;">c</span> <span style="text-decoration:underline;">regex</span>         go to next column with name matching <span style="text-decoration:underline;">regex</span>
+      <span style="font-weight:bold;">c</span> <span style="text-decoration:underline;">regex</span>         go to next column with name matching <span style="text-decoration:underline;">regex</span> (<span style="font-weight:bold;">c Enter</span> to go to next hit)
       <span style="font-weight:bold;">r</span> <span style="text-decoration:underline;">regex</span>         go to next row with key matching <span style="text-decoration:underline;">regex</span>
      <span style="font-weight:bold;">zc</span>  <span style="font-weight:bold;">zr</span> <span style="text-decoration:underline;">number</span>    go to column/row <span style="text-decoration:underline;">number</span> (0-based)
 
